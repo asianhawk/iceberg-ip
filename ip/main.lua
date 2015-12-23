@@ -1,6 +1,6 @@
 local ibs = require("icebergsupport")
-local script_path = ibs.join_path(ibs.CONFIG_DIR, "luamodule")
-local icon = ibs.join_path(script_path, "ip", "ip.png")
+local script_path = ibs.join_path(ibs.CONFIG_DIR, "plugins", "ip")
+local icon = ibs.join_path(script_path, "ip.png")
 
 local function ip_windows()
   local candidates = {}
