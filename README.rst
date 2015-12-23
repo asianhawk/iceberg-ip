@@ -8,9 +8,7 @@ Copy a selected ip address to the clipboard.
 
 Installation
 -----------------
-
-1. copy ``ip.lua`` and ``ip`` directory to ICEBERG_CONF_PATH/luamodules
-2. append ``require("ip")`` line before end of the ``config.lua``
+Just copy ``ip`` directory into the iceberg plugin directory.
 
 Acknowledgements
 -------------------
