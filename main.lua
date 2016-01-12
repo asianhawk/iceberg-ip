@@ -1,6 +1,11 @@
 local ibs = require("icebergsupport")
-local script_path = ibs.join_path(ibs.CONFIG_DIR, "plugins", "ip")
+local script_path = ibs.dirname(debug.getinfo(1).source:sub(2,-1))
 local icon = ibs.join_path(script_path, "ip.png")
+
+local config = {
+  name = "ip",
+}
+ibs.merge_table(config, plugin_ip_config or {})
 
 local function ip_windows()
   local candidates = {}
@@ -59,7 +64,7 @@ local function ip_linux()
   return candidates
 end
 
-commands["ip"] = { 
+commands[config.name] = { 
   path = function(args) 
     if #args == 0 then return end
     ibs.set_clipboard(args[1])
