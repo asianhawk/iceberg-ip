@@ -5,7 +5,7 @@ local icon = ibs.join_path(script_path, "ip.png")
 local config = {
   name = "ip",
 }
-ibs.merge_table(config, plugin_ip_config or {})
+ibs.merge_table(config, plugin_ip or {})
 
 local function ip_windows()
   local candidates = {}
