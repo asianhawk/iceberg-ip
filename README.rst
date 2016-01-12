@@ -8,7 +8,7 @@ Copy a selected ip address to the clipboard.
 
 Installation
 -----------------
-Just copy ``ip`` directory into the iceberg plugin directory.
+Just copy this project into the iceberg plugin directory.
 
 Acknowledgements
 -------------------
